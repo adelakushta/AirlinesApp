@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Destinations</title>
+  </head>
+  <body>
+    <!-- Navigation bar used to navigate through different sections of the website-->
+    <nav>
+      <a href="./index.html"> Airline Ticket System </a>
+      <a href="./airlines.html"> Manage Airlines </a>
+      <a href="./destinations.html"> Manage destinations</a>
+      <a href="/book-ticket.html"> Book a Ticket</a>
+    </nav>
+
+    <div id="Destinations">
+      <h2>Manage Destinations</h2>
+
+      <div id="destination-form">
+        <!-- Form used to get the input from destinations-->
+        <form>
+          <div id="input-fields">
+            <label for="destination-city">Destination City</label>
+            <input
+              name="destination-city"
+              type="text"
+              placeholder="Enter a city name"
+              required
+            />
+
+            <label for="select-airline">Select Airline</label>
+            <select name="select-airline" required>
+              <option value="example-airline-1">example airline 1</option>
+              <option value="example-airline-2">example airline 2</option>
+              <option value="example-airline-3">example airline 3</option>
+            </select>
+
+            <label for="price">Price (in USD):</label>
+            <input
+              name="price"
+              type="number"
+              placeholder="Enter the price"
+              min="0"
+              step="1"
+              required
+            />
+
+            <label for="travel-time">Travel Time (in Hours)</label>
+            <input
+              name="travel-time"
+              type="number"
+              placeholder="Enter the time"
+              min="0"
+              step="1"
+              required
+            />
+
+            <label for="date">Available Date</label>
+            <input name="date" type="date" required />
+          </div>
+
+          <button type="submit">Add Destination</button>
+        </form>
+      </div>
+
+      <!-- Used to show a list of all destinations booked-->
+      <div id="destinations-list">
+        <h2>Destinations List</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Destination</th>
+              <th>Airline</th>
+              <th>Price</th>
+              <th>Travel Time</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Example</td>
+              <td>Unknown</td>
+              <td>100</td>
+              <td>2</td>
+              <td>3-4-2024</td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
