@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Airlines</title>
+</head>
+<body>
+    <nav> 
+        <a href="index.html"> Airline Ticket System </a>
+        <a href="/Airlines/airlines.html"> Manage Airlines </a>
+        <a href="./destinations.html"> Manage destinations</a>
+        <a href="./ticket.html"> Book a Ticket</a>
+    </nav>
+    <h3>Manage Airlines</h3>
+    <form>
+        <label for="airlineName">Arline name</label>
+        <input type="text" name="airlineName" placeholder="Write an Airline">
+        <button type="submit">Add Airline</button>
+    </form>
+
+    <h3> Airlines List</h3>
+    <table> 
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Airline Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Delta</td>
+                <td>
+                    <button>Edit</button>
+                    <button> Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
